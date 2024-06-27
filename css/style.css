@@ -8,3 +8,56 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Page wrapper */
+.page-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #207000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+.page-wrapper > div {
+    width: 100%;
+    overflow: auto;
+}
+
+/* Content */
+.content {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+/* JS output container */
+ul {
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* JS output */
+li {
+    margin: .75rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    overflow-x: hidden;
+}
+
+.list-item-indicator {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.user-data-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
