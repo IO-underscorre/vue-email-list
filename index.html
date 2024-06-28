@@ -22,17 +22,17 @@
                     Mailing list
                 </h1>
 
-                <ul>
-                    <li>
+                <ul v-if="getUsersArray.length === 10">
+                    <li v-for="(user , index) in getUsersArray" :key="index">
                         <span class="list-item-indicator">
                             <i class="fa-solid fa-user"></i>
                         </span>
                         <div class="user-data-container">
                             <b class="user-name">
-                                
+                                {{ user.fullName }}
                             </b>
                             <strong class="user-email">
-                                
+                                {{ user.email }}
                             </strong>
                         </div>
                     </li>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    
+
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
